@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Your code here */
+header {
+    background-color: rgb(182, 179, 238);
+    padding: 20px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+    background-color: #EEE;
+    padding: 50px;
+}
+
+section {
+    background-color: white;
+    border: solid 1px #CCC;
+    transition: all 0.5s;
+}
+
+img {
+    width: 100%;
+    min-height: 150px;
+}
+
+section p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section:nth-child(even):hover {
+    transform: rotate(5deg) scale(0.9);
+}
+
+section:nth-child(odd):hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 1.3rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+}
