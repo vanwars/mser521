@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+DE+Grund+Guides&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playwrite+DE+Grund+Guides&display=swap');
 
 body {
     margin: 0;
@@ -10,25 +10,33 @@ body {
 
 h1 {
     margin: 0;
-    font-family: "Playwrite DE Grund Guides", cursive;
+    font-family: "Abril Fatface", serif;
     font-weight: 400;
     font-style: normal;
+    line-height: 4.5rem;
+    font-size: 3rem;
+    width: 100%;
+    /* text-align: center; */
 }
 
-h1 {
-    font-size: 3rem;
+h2 {
+    margin: 0;
+    font-family: "Abril Fatface", serif;
+    font-size: 2rem;
 }
 
 header {
+    background-color: #F0F0F0;
+}
+header div {
     display: flex;
     align-items: center;
-    background-color: #F0F0F0;
     min-height: 20vh;
 }
 
 .container {
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 20vw;
+    margin-right: 20vw;
     padding: 0 20px;
 }
 
@@ -37,10 +45,13 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 main {
     min-height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 section {
@@ -48,11 +59,34 @@ section {
     margin-bottom: 70px;
 }
 
-footer {
-    text-align: center;
-    background-color: #F0F0F0;
-    min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media screen and (max-width: 1100px) {
+    .container {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    header div {
+        min-height: auto;
+        padding: 10px 0 20px 0 !important;
+    }
+    .container {
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
 }

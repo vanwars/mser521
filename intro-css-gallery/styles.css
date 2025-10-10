@@ -33,11 +33,8 @@ section p {
     padding-bottom: 20px;
 }
 
-section:nth-child(even):hover {
-    transform: rotate(5deg) scale(0.9);
-}
 
-section:nth-child(odd):hover {
+section:hover {
     transform: rotate(-5deg) scale(1.1);
 }
 
