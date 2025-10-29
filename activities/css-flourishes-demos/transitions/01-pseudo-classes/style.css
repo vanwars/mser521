@@ -55,15 +55,16 @@ section {
     margin-bottom: 20px;
     padding: 4px 15px;
 }
+
 #section3 input:focus {
-    background-color: white;
+    background-color: yellow;
     border: solid 3px hotpink;
     outline: none;
 }
 
 
 /* Section 4 */
-#section4 .new::before {
+.new::before {
     content: "new";
     text-transform: uppercase;
     font-size: 0.8em;
@@ -107,4 +108,3 @@ section {
 .card:focus-within button {
     display: inline-block;
 }
-

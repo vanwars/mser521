@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 40px;
+  width: 20px;
   background-color: #3498db;
   color: white;
   padding-bottom: 10px;
@@ -57,6 +57,7 @@ body {
 
 .bar4 {
   height: 400px;
+  background-color: hotpink;
 }
 
 .bar5 {

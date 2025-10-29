@@ -6,6 +6,7 @@ body {
     font-weight: 400;
     font-style: normal;
     line-height: 1.6rem;
+    background-color: #fafafa;
 }
 
 h1 {
@@ -23,6 +24,7 @@ h2 {
     margin: 0;
     font-family: "Abril Fatface", serif;
     font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 header {
@@ -35,8 +37,8 @@ header div {
 }
 
 .container {
-    margin-left: 20vw;
-    margin-right: 20vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
     padding: 0 20px;
 }
 
@@ -51,12 +53,34 @@ header div {
 main {
     min-height: 70vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
 }
 
 section {
     margin-top: 40px;
-    margin-bottom: 70px;
+    margin-bottom: 0px;
+}
+
+.two-columns {
+    columns: 3;
+    column-gap: 20px;
+}
+
+.assignment {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    break-inside: avoid;
+}
+
+
+.assignment h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.3rem;
 }
 
 
@@ -88,5 +112,12 @@ section {
     }
     main {
         grid-template-columns: 1fr;
+    }
+    .assignment {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    .assignment h3 {
+        font-size: 1.2rem;
     }
 }
